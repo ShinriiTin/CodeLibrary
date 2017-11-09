@@ -2,7 +2,7 @@ template<size_t size,size_t size_log>
 struct SparseTable{
 	int max[size][size_log],bit[size];
 	inline void init(int*a,int n){
-		for(int i=1;i<=n;++i)bit[i]=bit[i>>1]+1;
+		for(int i=2;i<=n;++i)bit[i]=bit[i>>1]+1;
 		for(int i=1;i<=n;++i)max[i][0]=a[i];
 		for(int j=1;j<=bit[n];++j){
 			for(int i=1;i+(1<<j)-1<=n;++i){
