@@ -1,0 +1,7 @@
+define bit[x] as the max k s.t. $2^k\le x$
+
+define max[i][j] as the max value in range $[i,i+2^j-1]$
+
+time complexity: $O(n\log{n}) - O(1)$
+
+space complexity: $O(n\log{n})$
