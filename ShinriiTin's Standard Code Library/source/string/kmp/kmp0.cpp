@@ -12,7 +12,7 @@ struct Kmp{
 	}
 	template<typename T>
 	inline int match(T A,int lenA,T B,int lenB){
-		//count how many times does B appears in A
+		//count how many times does B appear in A
 		get_fail(B,lenB);
 		int res=0;
 		for(int i=0,j=-1;i<lenA;++i){
