@@ -1,8 +1,6 @@
 //indexed from 0
 template<size_t size>
 struct Manacher{
-	//type:ODD 1,EVEN 0
-	//define the center of even string as the left one
 	int r[2][size];
 	template<typename T>
 	inline void manacher(T S,int len,int type){
