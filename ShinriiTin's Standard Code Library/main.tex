@@ -12,8 +12,10 @@
 %\setlength{\mathindent}{0pt}
 
 %configure fonts
-\setmonofont{Menlo-BoldItalic.ttf}[Scale=1.0]
+\setmonofont{Courier New Bold}[Scale=1.0]
 \setCJKmainfont{STHeiti-Light.ttc}
+
+%\setmainfont{Courier New Bold}
 
 \renewcommand{\theFancyVerbLine}{\sffamily \textcolor[rgb]{0.5,0.5,0.5}{\scriptsize {\arabic{FancyVerbLine}}}}
 
@@ -24,16 +26,13 @@
 	autogobble,
 	baselinestretch=1.0,
 	tabsize=4,
-	fontsize=\normalsize,
-	%bgcolor=Gray,
+	fontsize=\scriptsize,
 	frame=single,
-	framesep=1mm,
-	framerule=0.3pt,
-	numbersep=1mm,
+	framesep=0.5mm,
+	framerule=0.15pt,
+	numbersep=0.5mm,
 	breaklines=true,
-	breaksymbolsepleft=2pt,
-	%breaksymbolleft=\raisebox{0.8ex}{ \small\reflectbox{\carriagereturn}}, %not moe!
-	%breaksymbolright=\small\carriagereturn,
+	breaksymbolsepleft=1pt,
 	breakbytoken=false,
 }
 \setminted[java]{
@@ -41,17 +40,14 @@
 	mathescape,
 	linenos,
 	autogobble,
-	baselinestretch=1.0,
+	baselinestretch=0.5,
 	tabsize=4,
-	%bgcolor=Gray,
 	frame=single,
-	framesep=1mm,
-	framerule=0.3pt,
-	numbersep=1mm,
+	framesep=0.5mm,
+	framerule=0.15pt,
+	numbersep=0.5mm,
 	breaklines=true,
-	breaksymbolsepleft=2pt,
-	%breaksymbolleft=\raisebox{0.8ex}{ \small\reflectbox{\carriagereturn}}, %not moe!
-	%breaksymbolright=\small\carriagereturn,
+	breaksymbolsepleft=1pt,
 	breakbytoken=false,
 }
 \setminted[text]{
